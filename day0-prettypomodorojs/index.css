@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background: no-repeat center center fixed;
+    background-color: black;
+    background-image: url('https://source.unsplash.com/2000x2000/?simple,black');
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.progress {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pomodoroSession {
+    display: flex;
+    justify-content: flex-start;
+    width: 128px;
+    height: 64px;
+    border: 1px solid white;
+}
+
+.work {
+    width: 64px;
+    height: 64px;
+    background-color: #c0ffb3;
+}
+
+.break {
+    width: 64px;
+    height: 64px;
+    background-color: #52de97;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.timer {
+    font-size: 12rem;
+}
+
+.timerarea {
+    transition: all 0.3s ease-in;
+}
+
+.timerarea:hover {
+    transform: scale(1.2)
+}
+
+.instruction {
+    font-size: 1.5rem;
+}
+
+.instruction--hidden {
+    visibility: hidden;
+}
