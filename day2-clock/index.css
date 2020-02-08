@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+.clockFace {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 100%;
+    position: relative;
+}
+
+.clockCenter {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 100%;
+    z-index: 100;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -9px 0 0 -9px;
+}
+
+.hand {
+    width: 80px;
+    height: 10px;
+    background-color: red;
+    border-radius: 20%;
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    transform-origin: center right;
+    transform: rotate(90deg);
+}
+
+.min {
+    height: 5px;
+    width: 130px;
+}
+
+.sec {
+    width: 130px;
+    height: 3px;
+    transition: all 0.3s cubic-bezier(0, 3.13, 1, 0.03);
+}
