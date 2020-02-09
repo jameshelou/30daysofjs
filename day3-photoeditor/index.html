@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Image Editor</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="editArea">
+            <h2>CSS Image Editor</h2>
+            <label for="contrast">contrast</label>
+            <input type="range" name="contrast" min="0" max="1000" value="100" data-units="%">
+
+            <label for="brightness">brightness</label>
+            <input type="range" name="brightness" min="0" max="1000" value="100" data-units="%">
+
+            <label for="saturation">saturation</label>
+            <input type="range" name="saturation" min="0" max="1000" value="100" data-units="%">
+
+            <label for="hue">hue</label>
+            <input type="range" name="hue" min="0" max="360" value="0" data-units="deg">
+
+            <label for="grayscale">grayscale</label>
+            <input type="range" name="grayscale" min="0" max="100" value="0" data-units="%">
+
+            <label for="blur">blur</label>
+            <input type="range" name="blur" min="0" max="20" value="0" data-units="px">
+        </div>
+        
+        <div class="sourceArea">
+                <img src="https://source.unsplash.com/random/800x600" alt="photo">
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
