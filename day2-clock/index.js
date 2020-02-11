@@ -5,6 +5,15 @@ const secHands = document.querySelectorAll('div.hand.sec');
 function setDate() {
     let time = new Date();
     // let perth = new Date().toLocaleString("en-US", {timeZone: "Australia/Perth"});
+    console.log(time.getSeconds())
+    // skip last second to avoid weird animation
+    if (time.getSeconds() === 0) {
+        secHands[0].classList.remove('secTransition');
+    }
+    
+    if (time.getSeconds() === 1) {
+        secHands[0].classList.add('secTransition');
+    }
 
     let secDegrees = (time.getSeconds() / 60) * 360 + 90;
     secHands.forEach(sec => {

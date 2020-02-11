@@ -59,5 +59,8 @@ h1 {
 .sec {
     width: 130px;
     height: 3px;
+}
+
+.secTransition {
     transition: all 0.3s cubic-bezier(0, 3.13, 1, 0.03);
 }
