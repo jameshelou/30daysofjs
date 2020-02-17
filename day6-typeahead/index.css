@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    background-color: #effffb;
+}
+
+.search {
+    outline: none;
+    border: none;
+    margin: 4%;
+    width: 30%;
+    height: 1.5em;
+    font-size: 1.5em;
+}
+
+.search::placeholder {
+    text-align: center;
+}
+
+li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+li {
+    display: block;
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+
+    text-decoration: none;
+}
+
+li:last-child {
+    border: none;
+}
+
+
+.highlight {
+    background-color: yellow;
+}
