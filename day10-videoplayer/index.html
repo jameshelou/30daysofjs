@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="player">
+        <video class="video" src="./player.mp4"></video>
+
+        <div class="toolbar">
+            <div class="timeline">
+                <div class="progress"></div>
+                <div class="progressEmpty"></div>
+            </div>
+
+            <div class="controls">
+                <button class="playButton button"><i class="material-icons">play_arrow</i></button>
+                <button class="speedButton button" name="playbackRate">1.0</button>
+
+                <button class="volumeButton button">🔈</button>
+                <input class="volumeSlider" name="volume" min="0" max="1" step="0.01" type="range">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
