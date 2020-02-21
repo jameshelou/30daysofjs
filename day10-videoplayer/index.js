@@ -68,7 +68,9 @@ function cancelDragScrub() {
 
 function updateTime() {
     let t = video.currentTime;
-    time.textContent = `${Math.floor(t / 60)}:${Math.round(t % 60)}`;
+    let s = Math.round(t % 60);
+    s < 10 ? s = '0' + String(s) : s = s;
+    time.textContent = `${Math.floor(t / 60)}:${s}`;
 }
 
 

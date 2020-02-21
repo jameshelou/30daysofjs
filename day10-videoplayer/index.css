@@ -20,12 +20,12 @@ body {
 
 .toolbar {
     position: relative;
-    bottom: 7px;
+    bottom: 5px;
     transition: all 0.2s ease-in;
 }
 
 .player:hover > .toolbar {
-    transform: translateY(-25px);
+    transform: translateY(-27px);
 }
 
 .player:hover .controls {
