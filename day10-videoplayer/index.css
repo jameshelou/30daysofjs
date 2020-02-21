@@ -9,6 +9,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    background-color: #404040;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 
 .player {
@@ -22,7 +25,7 @@ body {
 }
 
 .player:hover > .toolbar {
-    transform: translateY(-31px);
+    transform: translateY(-25px);
 }
 
 .player:hover .controls {
@@ -34,7 +37,7 @@ body {
 }
 
 .toolbar:hover .timeline {
-    transform: scaleY(5) translateY(-1.1px);
+    transform: scaleY(5) translateY(-1.3px);
 }
 
 .progress {
@@ -63,16 +66,20 @@ body {
 
 .playButton {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .speedButton {
     font-size: 0.75rem;
+    width: 48px;
 }
 
 .volumeButton {
     font-size: 1.2rem;
     padding: 0;
     text-align: center;
+    width: 32px;
 }
 
 .volumeButton:hover ~ .volumeSlider {
@@ -85,13 +92,13 @@ body {
 
 .volumeSlider {
     display: none;
-    background-color: lightpink;
+    background-color: palevioletred;
     -webkit-appearance: none;
     outline: none;
     position: absolute;
     transform: rotate(-90deg);
-    left: 24px;
-    bottom: 64px;
+    left: 50px;
+    bottom: 59.5px;
     width: 100px;
     height: 30px;
 }
@@ -103,4 +110,10 @@ body {
     height: 30px;
     background: red;
     cursor: pointer;
+}
+
+.time {
+    color: white;
+    margin: auto 0 auto 8px;
+    font-size: 0.75rem;
 }

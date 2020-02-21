@@ -8,6 +8,7 @@ const speedButton = player.querySelector('.speedButton');
 const volumeSlider = player.querySelector('.volumeSlider');
 const supportedSpeed = [1, 1.25, 1.5, 1.75, 2, 0.25, 0.5, 0.75];
 let currSpeed = 0;
+const time = player.querySelector('.time');
 
 // Video player functions
 function playVideo() {
@@ -65,6 +66,11 @@ function cancelDragScrub() {
     timeline.onmousemove = null;
 }
 
+function updateTime() {
+    let t = video.currentTime;
+    time.textContent = `${Math.floor(t / 60)}:${Math.round(t % 60)}`;
+}
+
 
 // Hook up listeners
 video.addEventListener('click', playVideo);
@@ -72,6 +78,8 @@ playButton.addEventListener('click', playVideo);
 volumeSlider.addEventListener('input', handleSliderChange);
 speedButton.addEventListener('click', handleSpeedChange);
 video.addEventListener('timeupdate', handleProgressChange);
+video.addEventListener('timeupdate', updateTime);
+
 timeline.addEventListener('click', handleScrub);
 timeline.addEventListener('mousedown', handleDragScrub);
 document.addEventListener('mouseup', cancelDragScrub);
