@@ -14,9 +14,17 @@ aside {
 main {
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
 }
 
 .demo {
-  background-color: lightblue;
+  text-align: center;
   flex-basis: 25%;
+  padding-bottom: 64px;
+}
+
+.demo img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
