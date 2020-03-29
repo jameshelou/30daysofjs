@@ -1,6 +1,6 @@
-let WORK_MINUTES = 0.05;
+let WORK_MINUTES = 25; //0.05 for test
 let WORK_SECONDS = WORK_MINUTES * 60;
-let BREAK_MINUTES = 0.1;
+let BREAK_MINUTES = 5; // 0.01 for test
 let BREAK_SECONDS = BREAK_MINUTES * 60;
 let timer = document.querySelector('.timer');
 let timeLeft;

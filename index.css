@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 20vh auto;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+aside {
+  text-align: center;
+  background-color: #ebe6e6;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.demo {
+  background-color: lightblue;
+  flex-basis: 25%;
+}

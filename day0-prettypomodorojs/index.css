@@ -5,9 +5,10 @@ body {
     color: white;
     background: no-repeat center center fixed;
     background-color: black;
-    background-image: url('https://source.unsplash.com/2000x2000/?simple,black');
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    background-image: url('https://source.unsplash.com/4000x4000/?landscape');
+    /* background-repeat: no-repeat; */
+    background-size: cover; 
+    text-shadow: 2px 2px 5px #000000;
 }
 
 .progress {
