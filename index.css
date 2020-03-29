@@ -24,10 +24,26 @@ main {
   text-align: center;
   flex-basis: 25%;
   padding-bottom: 64px;
+  margin: 0 auto;
 }
 
 .demo img {
   width: 400px;
   height: 400px;
   object-fit: cover;
+}
+
+/* mobile */
+@media (max-height: 820px) {
+  body {
+    grid-template-rows: 30vh auto;
+  }
+
+  aside {
+    padding: 16px;
+  }
+
+  .demo img {
+    width: 350px;
+  }
 }
