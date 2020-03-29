@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+  font-family: 'Source Code Pro', monospace;
+  background-color: rgb(21, 21, 21);
+  color: #00fc08;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  height: 100%;
+}
+
+.container {
+  background-color: #000000;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.todoForm {
+  display: flex;
+  max-height: 38px;
+}
+
+.todoInput {
+  flex: 2 0 0;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  font-family: inherit;
+  color: inherit;
+  background-color: black;
+  outline: none;
+}
+
+.todoInput::placeholder {
+  color: inherit;
+}
+
+.todoInput:focus::placeholder {
+  color: transparent;
+}
+
+.todoSubmit {
+  flex: 0.3 0 0;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #00ff00;
+}
+
+.todosList {
+  text-align: left;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+input + label:before {
+  content: '//TODO: '
+}
+
+input:checked + label:before {
+  content: '//DONE: '
+}
+
+.deleteTodo:hover {
+  color: red;
+}
+
+
+/* Checkbox Styling */
+/* CSS Created by CSS CHECKBOX */
+/**********************************/
+/**** www.CSScheckbox.com *********/
+
+/*general styles for all CSS Checkboxes*/
+label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label {
+  background-position: 0 -15px;
+}
+
+.css-label {
+  background-image: url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+
+/* Specific */
+.dark-check-green {
+  background-image: url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
