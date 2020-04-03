@@ -1,2 +1,4 @@
 # 30daysofjs
-30 day JS mini-project challenge
+a collection of mini projects created using only **html**, **css** and **js**
+
+[view the projects here](https://jameshelou.github.io/30daysofjs/)
