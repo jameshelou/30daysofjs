@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: background-color 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  background-color: black;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.photobooth {
+  text-align: center;
+}
+
+.camera {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  display: none;
+}
+
+.canvas {
+  width: 50%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: black;
+}
+
+.controls__takePhoto {
+  font-size: 4em;
+  flex: 0.1;
+  border: none;
+  outline: none;
+  background-color: #beebe900;
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.controls__takePhoto:hover {
+  transform: scale(1.3);
+}
+
+.strip {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.strip img {
+  margin: 0 8px;
+  max-width: 20vh;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+}
+
+.download a {
+  text-decoration: none;
+  margin-top: 8px;
+  color: white;
+}
